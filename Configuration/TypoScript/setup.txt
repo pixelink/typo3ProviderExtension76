@@ -1,0 +1,63 @@
+
+# Include TypoScripts
+#######################################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:YourExtFolder/Configuration/TypoScript/AdditionalTs/xxx.ts">
+
+config.contentObjectExceptionHandler = 0
+
+# PAGE Settings
+#######################################
+
+page = PAGE
+page {
+    typeNum = 0
+
+    10 = FLUIDTEMPLATE
+    10 {
+        templateName = TEXT
+        templateName.stdWrap {
+            cObject = CASE
+            cObject {
+                key.field = backend_layout
+                key.ifEmpty.data = levelfield:-1,backend_layout_next_level,slide
+
+                default = TEXT
+                default.value = Default
+
+                1 = TEXT
+                1.value = OneCol
+
+                2 = TEXT
+                2.value = TwoCol
+            }
+        }
+
+        layoutRootPaths {
+            10 = {$page.template.layoutRootPath}
+        }
+        partialRootPaths {
+            10 = {$page.template.partialRootPath}
+        }
+        templateRootPaths {
+            10 = {$page.template.templateRootPath}
+        }
+
+
+        # Get Content
+        #######################################
+
+        variables {
+            contentMain < styles.content.get
+            contentMain.select.where = colPos = 0
+
+            contentLeft < styles.content.get
+            contentLeft.select.where = colPos = 1
+
+            contentRight < styles.content.get
+            contentRight.select.where = colPos = 2
+
+            contentFooter < styles.content.get
+            contentFooter.select.where = colPos = 3
+        }
+    }
+}

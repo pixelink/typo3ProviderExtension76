@@ -1,0 +1,9 @@
+# Template integration
+#######################################
+page {
+    template {
+        layoutRootPath = EXT:YourExtFolder/Resources/Private/Layouts/
+        partialRootPath = EXT:YourExtFolder/Resources/Private/Partials/
+        templateRootPath = EXT:YourExtFolder/Resources/Private/Templates/
+    }
+}
