@@ -1,7 +1,9 @@
 
 # Include TypoScripts
 #######################################
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:$extension_name$/Configuration/TypoScript/AdditionalTs/xxx.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:$extension_name$/Configuration/TypoScript/AdditionalTs/config.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:$extension_name$/Configuration/TypoScript/AdditionalTs/content.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:$extension_name$/Configuration/TypoScript/AdditionalTs/libs.ts">
 
 config.contentObjectExceptionHandler = 0
 
@@ -28,7 +30,13 @@ page {
                 1.value = OneCol
 
                 2 = TEXT
-                2.value = TwoCol
+                2.value = OneColNarrow
+
+                3 = TEXT
+                3.value = TwoColRight
+
+                4 = TEXT
+                4.value = TwoColLeft
             }
         }
 

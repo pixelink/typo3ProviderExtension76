@@ -1,5 +1,12 @@
 # typo3ProviderExtension76
 Provider Extension for TYPO3 v. 7.6 with fluid styled content usage
+**Features**
+
+    - Predefined Backend Layouts
+    - Space before and after for each CE
+    - Additional CSS class for each CE
+    - CE Headline labels roughly edited
+    - CE Layouts extended
 
 Some Backend Layouts are already integrated. Home Page not, as this is mostly to individual
 
