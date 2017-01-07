@@ -1,0 +1,3 @@
+# Include Page TSConfig
+#######################################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:$extension_name$/Configuration/TSConfig/AdditionalTsConfig/BackendLayouts.ts">
