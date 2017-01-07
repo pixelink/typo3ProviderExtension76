@@ -1,10 +1,10 @@
 <?php
 
 $EM_CONF[$_EXTKEY] = array(
-    'title' => 'TITLE',
+    'title' => '$extension_title$',
     'description' => 'Provider Extension',
     'category' => 'templates',
-    'author' => 'Benjamin Riezler',
+    'author' => 'author name',
     'author_email' => '@',
     'state' => 'stable',
     'internal' => '',

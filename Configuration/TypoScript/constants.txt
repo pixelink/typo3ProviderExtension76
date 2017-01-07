@@ -2,8 +2,8 @@
 #######################################
 page {
     template {
-        layoutRootPath = EXT:YourExtFolder/Resources/Private/Layouts/
-        partialRootPath = EXT:YourExtFolder/Resources/Private/Partials/
-        templateRootPath = EXT:YourExtFolder/Resources/Private/Templates/
+        layoutRootPath = EXT:$extension_name$/Resources/Private/Layouts/
+        partialRootPath = EXT:$extension_name$/Resources/Private/Partials/
+        templateRootPath = EXT:$extension_name$/Resources/Private/Templates/
     }
 }
