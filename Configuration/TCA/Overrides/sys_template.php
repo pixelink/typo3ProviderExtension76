@@ -5,7 +5,7 @@ die('Access denied');
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
 
-$_EXTKEY,
+'$extension_name$',
 'Configuration/TypoScript',
 '$extension_name$'
 );
