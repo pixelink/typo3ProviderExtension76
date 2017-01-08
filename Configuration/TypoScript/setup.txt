@@ -2,7 +2,6 @@
 # Include TypoScripts
 #######################################
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:$extension_name$/Configuration/TypoScript/AdditionalTs/config.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:$extension_name$/Configuration/TypoScript/AdditionalTs/content.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:$extension_name$/Configuration/TypoScript/AdditionalTs/libs.ts">
 
 config.contentObjectExceptionHandler = 0
